@@ -1,0 +1,78 @@
+.categories {
+  &__wrapper {
+    display: grid;
+    row-gap: 40px;
+
+    @include onTablet {
+      row-gap: 56px;
+    }
+  }
+
+  .category {
+    &__photos {
+      @include pageGrid;
+      margin-bottom: 16px;
+
+      gap: 20px;
+
+      @include onTablet {
+        gap: 24px;
+      }
+    }
+
+    &__link {
+      grid-column: span 1;
+
+      @include onTablet {
+      grid-column: span 3;
+      }
+
+      @include onDesktop {
+        grid-column: span 6;
+      }
+    }
+
+    &__photo {
+
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &__title {
+      margin: 0;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 140%;
+    }
+  }
+
+  &__extend {
+    @include pageGrid;
+  }
+
+  &__view-all-button {
+@include button;
+
+    grid-column: span 2;
+
+    @include onTablet {
+      grid-column: span 6;
+    }
+
+    @include onDesktop {
+      grid-column: span 4;
+    }
+  }
+
+  &__view-all-link {
+    text-decoration: none;
+    color: #fff;
+    height: 48px;
+    width: 100%;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 48px;
+    text-align: center;
+  }
+}

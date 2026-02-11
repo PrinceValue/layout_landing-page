@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -7,6 +7,9 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="src/styles/main.scss"
@@ -16,7 +19,242 @@
       defer
     ></script>
   </head>
-  <body>
-    <h1>Landing Page</h1>
+  <body class="page__body">
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <div class="top-bar">
+            <a href="#" class="top-bar__logo-link">
+              <img
+              src="src/images/Logo.png"
+              alt="Logo"
+              class="top-bar__logo">
+            </a>
+
+            <div class="top-bar__icons">
+              <a href="#" class="icon icon--phone"></a>
+              <a href="#menu" class="icon icon--burger"></a>
+            </div>
+          </div>
+          <div class="header__bottom">
+            <h1 class="header__title">Your senses.</h1>
+            <h1 class="header__title"> Set free.</h1>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <aside class="page__menu menu" id="menu">
+      <div class="container">
+        <div class="menu__content">
+          <div class="top-bar menu__top">
+            <a href="#" class="top-bar__logo">
+              <img src="src/images/Logo.png" alt="Logo">
+            </a>
+            <div class="header__icons">
+              <a href="#" class="icon icon--close"></a>
+            </div>
+          </div>
+          <div class="menu__bottom">
+            <div>
+              <nav class="menu__nav">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Recommended</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Categories</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">About Us</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Contact Us</a>
+                  </li>
+                </ul>
+              </nav>
+              <a href="+1 234 5555-55-55" class="menu__phone-number">+1 234 5555-55-55</a>
+              <a href="#" class="menu__call-to-order">call to order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <main class="main">
+      <div class="container">
+        <div class="main__content">
+          <section
+          class="recommended"
+          id="recommended">
+            <h2 class="section-title">Recommended</h2>
+            <div class="recommended__products">
+              <article class="product recommended__product">
+                <img
+                class="product__photo"
+                src="src/images/product-img/beosound.png"
+                alt="beosound">
+                <h3>BEOSOUND A5</h3>
+                <p>Huge sound anywhere – in the home or outdoors. Beosound A5 is a Wi-Fi and Bluetooth speaker with long-lasting battery and wireless charging built in.</p>
+                <p>$ 1299.00</p>
+              </article>
+              <article class="product recommended__product">
+                <img
+                class="product__photo"
+                src="src/images/product-img/beoplay.png"
+                alt="beoplay">
+                <h3>BEOPLAY HX</h3>
+                <p>Wireless noise-cancelling headphones. Listen in comfort whether you're on a call, working from home or taking a moment for yourself.</p>
+                <p>$ 499.00</p>
+              </article>
+              <article class="product recommended__product">
+                <img
+                class="product__photo"
+                src="src/images/product-img/beosound2.png"
+                alt="beosound2">
+                <h3>BEOSOUND THEATRE</h3>
+                <p>Four patent-pending acoustic innovations in one sleek soundbar envelop you in sound from every angle. Made to fit any TV, and last for generations.</p>
+                <p>$ 3199.00</p>
+              </article>
+            </div>
+          </section>
+          <section class="categories" id="categories">
+            <h2 class="section-title">Sound. Vision.
+It’s your pick.
+            </h2>
+            <div class="categories__wrapper">
+              <article class="category">
+                <div class="category__photos">
+                  <a href="#" class="category__link">
+                    <img
+                    src="src/images/category-img/category.png"
+                    alt="category"
+                    class="category__photo">
+                  </a>
+                  <a href="#" class="category__link">
+                    <img
+                    src="src/images/category-img/category1.png"
+                    alt="category1"
+                    class="category__photo">
+                  </a>
+                </div>
+                <h3 class="category__title">
+                  Portable speakers
+                </h3>
+              </article>
+              <article class="category">
+                <div class="category__photos">
+                  <a href="#" class="category__link">
+                    <img
+                    src="src/images/category-img/category2.png"
+                    alt="category2"
+                    class="category__photo">
+                  </a>
+                  <a href="#" class="category__link">
+                    <img
+                    src="src/images/category-img/category3.png"
+                    alt="category3"
+                    class="category__photo">
+                  </a>
+                </div>
+                <h3 class="category__title">
+                  Earphones
+                </h3>
+              </article>
+              <article class="category">
+                <div class="category__photos">
+                  <a href="#" class="category__link">
+                    <img
+                    src="src/images/category-img/category4.png"
+                    alt="category4"
+                    class="category__photo">
+                  </a>
+                  <a href="#" class="category__link">
+                    <img
+                    src="src/images/category-img/category5.png"
+                    alt="category5"
+                    class="category__photo">
+                  </a>
+                </div>
+                <h3 class="category__title">
+                  Smart Home
+                </h3>
+              </article>
+              <div class="categories__extend">
+                <div class="categories__view-all-button">
+                  <a href="#" class="categories__view-all-link">View all</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="main__content">
+        <section class="description" id="description">
+          <div class="description__photo"></div>
+          <div class="container">
+            <div class="description__wrapper">
+              <h2 class="section-title description__title">Timeless, for 50 years and counting</h2>
+              <div class="description__content">
+                <p>Bang & Olufsen is expanding its Recreated Classics Program with the launch of Beosystems – a limited edition music system that transcends timeby bridging the gap between one of our iconic designs from 1972 and today’s cutting-edge digital technology.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contact-us">
+          <div class="container">
+            <h2 class="section-title">Contact us</h2>
+            <div class="contact-us__content">
+              <form class="message-form contact-us__message-form">
+                <label class="message-form__label">
+                  <input
+                  type="text"
+                  class="message-form__input"
+                  placeholder="Name">
+                </label>
+                <label class="message-form__label">
+                  <input
+                  type="email"
+                  class="message-form__input"
+                  placeholder="Email">
+                </label>
+                <label class="message-form__label">
+                  <textarea
+                  name="message"
+                  class="message-form__input message-form__input--big"
+                  placeholder="Message"
+                  wrap="hard">
+                  </textarea>
+                </label>
+                <label class="message-form__submit-label">
+                  <button class="message-form__submit-button">Send</button>
+                </label>
+              </form>
+
+              <div class="contact-us__info">
+
+                <div class="contact-us__info-section">
+                  <p class="contact-us__gray">Phone</p>
+                  <a href="+1 234 5555-55-55" class="contact-us__link">+1 234 5555-55-55</a>
+                </div>
+
+                <div class="contact-us__info-section">
+                  <p class="contact-us__gray">Email</p>
+                  <a href="hello@nothing.com" class="contact-us__link">hello@nothing.com</a>
+                </div>
+
+                <div class="contact-us__info-section">
+                  <p class="contact-us__gray">Address</p>
+                  <p class="contact-us__address">400 first ave. suite 700 Minneapolis, MN 55401</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+
+    </footer>
   </body>
 </html>

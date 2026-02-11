@@ -1,0 +1,32 @@
+.header {
+  background-image: url(../images/header-bg.png);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 120px;
+
+  &__content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+
+  &__title {
+    color: $header-title-color;
+    font-weight: 700;
+    font-size: 36px;
+
+
+    @include onTablet {
+      font-size: 48px;
+    }
+
+    @include onDesktop {
+      font-size: 56px;
+    }
+  }
+
+  &__bottom {
+    padding-block: 40px;
+  }
+}
