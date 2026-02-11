@@ -17,11 +17,11 @@
     font-size: 36px;
 
 
-    @include onTablet {
+    @include on-tablet {
       font-size: 48px;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       font-size: 56px;
     }
   }

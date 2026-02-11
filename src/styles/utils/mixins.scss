@@ -1,61 +1,62 @@
-@mixin hover ($property, $toValue) {
-  transition: #{$property} 0.3s;
-
+@mixin hover($property, $toValue) {
+  transition:#{$property} 0.3s;
   &:hover{
     #{$property}: $toValue;
   }
 }
 
-@mixin onTablet {
+@mixin on-tablet {
   @media (min-width: 744px) {
     @content;
   }
 }
 
-@mixin onDesktop {
+@mixin on-desktop {
   @media (min-width: 1024px) {
     @content;
   }
 }
 
-@mixin contentPaddingInLine {
+@mixin content-padding-in-line {
   padding-inline: 20px;
 
-  @include onTablet {
+  @include on-tablet {
     padding-inline: 72px;
   }
 
-  @include onDesktop() {
+  @include on-desktop {
     min-width: 1020px;
     margin-inline: auto;
     padding-inline: 120px;
   }
 }
 
-@mixin pageGrid {
+@mixin page-grid {
     display: grid;
   column-gap: 20px;
+
   --columns: 2;
+
   grid-template-columns: repeat(var(--columns), 1fr);
 
-  @include onTablet {
+  @include on-tablet {
     column-gap: 24px;
+
     --columns:6;
   }
 
-  @include onDesktop {
+  @include on-desktop {
     --columns:12;
   }
 }
 
 .container {
-  @include contentPaddingInLine();
+  @include content-padding-in-line;
 }
 
 @mixin button {
   display: grid;
-  align-items: center;
-  justify-items: center;
+  place-items: center;
   background-color: $button-orange;
   border-radius: 8px;
   box-sizing: border-box;

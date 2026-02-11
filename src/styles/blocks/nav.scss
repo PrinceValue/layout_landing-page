@@ -16,7 +16,7 @@
     line-height: 140%;
     color: $main-text-color;
 
-    &:after {
+    &::after {
       content: ' ';
       position: absolute;
       display: block;
