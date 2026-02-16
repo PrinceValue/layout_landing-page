@@ -10,6 +10,7 @@
     box-sizing: border-box;
     border-radius: 8px;
     padding: 16px 14px;
+    cursor: text;
 
     &:hover {
       border: 1px solid $input-hover-border;
@@ -28,7 +29,6 @@
 
     &:hover {
       pointer-events: all;
-      cursor: text;
     }
 
     &--big {
