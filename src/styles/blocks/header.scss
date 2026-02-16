@@ -9,13 +9,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    }
+  }
 
   &__title {
     color: $header-title-color;
     font-weight: 700;
     font-size: 36px;
-
 
     @include on-tablet {
       font-size: 48px;

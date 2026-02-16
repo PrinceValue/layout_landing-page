@@ -18,11 +18,11 @@
     }
   }
 
-&__wrapper {
-  @include page-grid;
-  
-  padding-block: 120px;
-}
+  &__wrapper {
+    @include page-grid;
+
+    padding-block: 120px;
+  }
 
   &__title {
     grid-column: span 2;
