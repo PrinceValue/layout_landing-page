@@ -16,13 +16,14 @@
       border: 1px solid $input-hover-border;
     }
 
+    &:focus-within {
+      border: 1px solid $input-hover-border;
+    }
+    
     &:active {
       border: 2px solid $input-active-border;
     }
 
-    &:focus-within {
-      border: 1px solid $input-hover-border;
-    }
   }
 
   &__input {
