@@ -1,6 +1,8 @@
 .product {
   @include hover(transform, scale(1.05));
 
+  cursor: pointer;
+
   &__photo {
     width: 100%;
   }
