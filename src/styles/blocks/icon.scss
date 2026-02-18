@@ -13,7 +13,36 @@
   }
 
   &--phone {
+    position: relative;
     background-image: url(../images/icons/Icon-Phone-call.png);
+
+    @include on-desktop {
+      &::before {
+        transition: .3s;
+        color: $main-text-color;
+        content: '+1 234 5555-55-55';
+        position: absolute;
+        right: 100%;
+        top: 5px;
+        margin-right: 20px;
+
+        font-weight: 700;
+
+
+        opacity: 0;
+        pointer-events: none;
+        transform: translateX(-100%);
+        width: max-content;
+        font-family: inherit;
+        letter-spacing: 2px;
+      }
+
+      &:hover::before {
+        opacity: 1;
+        transform: translateX(0);
+        pointer-events: all;
+      }
+    }
   }
 
   &--burger {

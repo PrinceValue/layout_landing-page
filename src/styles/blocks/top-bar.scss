@@ -8,6 +8,19 @@
     padding-block: 30px;
   }
 
+  &__phone-number {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-100%);
+    transition: .3s;
+
+    .icon-phone:hover .top-bar__phone-number {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+
   &__icons {
     display: flex;
     gap: 24px;
