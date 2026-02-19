@@ -1,5 +1,10 @@
 .description {
   background-color: $descrition-bg-clr;
+  margin-bottom: 64px;
+
+  @include on-tablet {
+    margin-bottom: 0;
+  }
 
   &__photo {
     background-image: url(../images/img-block.png);
@@ -22,7 +27,7 @@
   &__wrapper {
     @include content-padding-in-line;
     @include page-grid;
-    
+
     max-width: 1020px;
     padding-block: 120px;
   }
