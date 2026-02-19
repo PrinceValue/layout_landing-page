@@ -4,6 +4,7 @@
     row-gap: 96px;
     padding-bottom: 96px;
     max-width: 1020px;
+    margin-inline: auto;
 
     @include on-tablet {
       row-gap: 120px;

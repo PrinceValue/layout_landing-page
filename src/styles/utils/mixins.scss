@@ -53,10 +53,10 @@
 .container {
   @include content-padding-in-line;
 
-  &--main {
-    display: flex;
-    justify-content: center;
-  }
+  // &--main {
+  //   display: flex;
+  //   justify-content: center;
+  // }
 }
 
 @mixin button {

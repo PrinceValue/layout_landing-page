@@ -4,11 +4,22 @@
   background-position: center;
   margin-bottom: 120px;
 
+  // &__container {
+  //   display: flex;
+  //   justify-content: center;
+
+  //   @include on-desktop {
+  //     min-width: 1020px;
+  //   }
+  // }
+
   &__content {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width: 1020px;
+    margin-inline: auto;
   }
 
   &__title {
